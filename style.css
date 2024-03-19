@@ -1,0 +1,159 @@
+body {
+  box-sizing: border-box;
+}
+
+/* header nav */
+.bg-img {
+  background-image: url("./assets/bg-img.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+.nav-logo {
+  width: 8%;
+}
+
+.google-btn {
+  background-color: #4a5fff;
+  width: 116px;
+  height: 38px;
+  padding: 4px 6px 4px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon {
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 38px;
+  width: 38px;
+  border-radius: 8px;
+}
+
+.icon > img {
+  width: 20px;
+  margin: 9px 0 0 8.5px;
+}
+
+.google-btn > a {
+  color: white;
+  font-weight: 700;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.google-btn > a > p {
+  position: absolute;
+  top: 16%;
+  left: 42%;
+}
+
+.login-btn > i > a > img {
+  width: 40px;
+}
+
+/* header hero */
+.header-hero-text1 {
+  color: #02fee7;
+  font-weight: 700;
+}
+
+.header-hero-text2 {
+  margin: 35px 0;
+  font-size: 18px;
+  font-weight: 600;
+  width: 80%;
+}
+
+.hero-h1 {
+  font-size: 90px;
+  font-weight: 900;
+}
+
+.btn-1 {
+  background-image: radial-gradient(
+    circle,
+    #feb302,
+    #f8c600,
+    #eed900,
+    #e0ec00,
+    #cdff05
+  );
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all .5 ease-in;
+}
+
+.btn-1:hover {
+  background-image: radial-gradient(
+    circle,
+    #eed900,
+    #feb302,
+    #f8c600,
+    #e0ec00,
+    #cdff05
+  );
+}
+
+.btn-2 {
+  background: radial-gradient(
+    circle,
+    #feb302,
+    #f8c600,
+    #eed900,
+    #e0ec00,
+    #cdff05
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: none;
+  font-weight: 700;
+}
+
+
+
+
+/* mobile device */
+@media (max-width: 575.98px) {
+  .bg-img {
+    background-image: none;
+    background-color: black;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-logo {
+    width: 40%;
+    margin-bottom: 10px;
+  }
+
+  .google-btn {
+    width: 100px;
+  }
+
+  .icon {
+    width: 35px;
+  }
+
+  .icon > img {
+    margin: 9px 0 0 7px;
+  }
+
+  /* header hero */
+  .hero-h1 {
+    font-size: 45px;
+  }
+
+  .header-hero-text2 {
+    font-size: 15px;
+    width: 100%;
+  }
+}
