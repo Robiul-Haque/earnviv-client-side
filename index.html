@@ -12,69 +12,67 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="bg-img">
-    <header class="mx-1 mx-md-5 mx-lg-5 px-md-5 px-lg-5 mt-3 mt-md-4 mt-lg-4">
-      <nav
-        class="d-flex justify-content-between align-items-center px-1 px-md-3 px-lg-3 bg-black"
-      >
-        <img src="./assets/logo.png" alt="header logo" class="nav-logo" />
-        <ul
-          class="d-flex justify-content-center gap-3 gap-md-5 gap-lg-5 align-items-center list-unstyled"
-        >
-          <li class="google-btn">
+  <body id="bg-img">
+    <header id="header">
+      <nav id="navbar">
+        <img src="./assets/logo.png" alt="site logo" class="nav-logo" />
+        <ul class="menu">
+          <li>
             <a href="#">
-              <i class="icon"
-                ><img src="./assets/google-icon.png" alt="google-icon"
-              /></i>
-              <p>Google</p>
+              <img
+                src="./assets/google-logo.png"
+                alt="google logo"
+                class="google-logo"
+              />
             </a>
           </li>
-          <li class="d-none d-md-block d-lg-block">
-            <a href="#" class="text-decoration-none text-white fw-semibold"
-              >Signup</a
-            >
+          <li class="hidden-for-sm">
+            <a href="#">Signup</a>
           </li>
-          <li class="d-none d-md-block d-lg-block">
-            <a href="#" class="text-decoration-none text-white fw-semibold"
-              >Login</a
-            >
+          <li class="hidden-for-sm">
+            <a href="#">Login</a>
           </li>
-          <li class="d-block d-md-none d-lg-noned-md-none login-btn">
-            <i
-              ><a href="#"><img src="./assets/login.png" alt="login icon" /></a
-            ></i>
+          <li class="visible-for-sm">
+            <i>
+              <img src="./assets/login.png" alt="login img" />
+            </i>
           </li>
         </ul>
       </nav>
-      <section
-        class="d-flex justify-content-md-between justify-content-lg-between align-items-center  flex-column flex-md-row gap-5 mt-5 pt-0 pt-md-5 pt-lg-5 mx-4"
-      >
-        <div class="w-100 w-md-50 w-lg-50">
-          <p class="header-hero-text1">#1 Crypto Rewarding Platform 💰</p>
-          <h1 class="text-white hero-h1">
-            Get Paid To Complete Offers, Surveys & More!
-          </h1>
-          <p class="text-white header-hero-text2">
+      <section class="hero-section">
+        <div class="left-hero">
+          <p class="hero-text1">#1 Crypto Rewarding Platform 💰</p>
+          <h1 class="hero-h1">Get Paid To Complete Offers, Surveys & More!</h1>
+          <p class="hero-text2">
             We offer many offerwalls, faucet claims, games and more to help you
             earn money online. It's fast, free and easy!
           </p>
-          <div class="d-flex gap-0 gap-md-4">
-            <button class="btn-1">Get Started</button>
-            <button class="btn-2">
-              <img src="./assets/line.png" alt="line image" /> Login
-            </button>
-          </div>
+          <button class="hero-btn1">Get Started</button>
+          <button class="hero-btn2">
+            <img src="./assets/line.png" alt="line image" /> Login
+          </button>
         </div>
         <img
           src="./assets/header-bg.png"
-          alt="header bg image"
-          class="me-md-5 pe-md-5 me-lg-5 pe-lg-5 img-fluid"
+          alt="header image"
+          class="right-hero"
         />
       </section>
     </header>
     <main>
-      <section>
-        <img src="" alt="" />
+      <section class="about-content">
+        <img src="./assets/about.png" alt="about image" class="about-img" />
+        <div>
+          <h2>Complete Offers, Get <span>Rewards</span></h2>
+          <p>
+            Earn coins by completing simple offers, faucet claims, ptc, surveys
+            and more from our offerwalls.
+          </p>
+          <p>
+            Then, redeem your coins anytime for instant bitcoin, cash and more.
+          </p>
+          <button></button>
+        </div>
       </section>
     </main>
 
