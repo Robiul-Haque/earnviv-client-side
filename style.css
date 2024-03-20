@@ -311,7 +311,7 @@ body {
 
 /* start projects area */
 .project-container {
-  margin: 120px 320px 10px 320px;
+  margin: 120px 320px 180px 320px;
 }
 
 .project-container-main-text {
@@ -367,6 +367,12 @@ body {
   color: white;
   font-size: 20px;
   font-weight: 900;
+  transition: 0.5s ease all;
+}
+
+.project-container-card > div > h1:hover {
+  color: #feb302;
+  cursor: pointer;
 }
 
 .project-container-card > div > p {
@@ -375,6 +381,61 @@ body {
   font-weight: 600;
 }
 /* end projects area */
+
+/* start statistics area */
+.statistics-container-main-text {
+  color: #feb302;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.statistics-container-main-heading {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  line-height: 60px;
+}
+
+.statistics-container-flex {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.statistics-container-flex > div {
+  text-align: center;
+  padding: 30px 80px;
+  background-color: #251a34;
+  border-radius: 20px;
+}
+
+.statistics-container-flex > div > p {
+  background: radial-gradient(
+    circle,
+    #a66bff,
+    #c666ef,
+    #dd62df,
+    #ee61cf,
+    #fb64bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.statistics-container-flex > div > h1 {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+/* end statistics area */
 
 /* mobile device */
 @media (max-width: 575.98px) {
@@ -538,5 +599,33 @@ body {
   }
   /* end projects area */
 
+  /* start statistics area */
+  .statistics-container-main-text {
+    font-size: 12px;
+    font-weight: 600;
+  }
 
+  .statistics-container-main-heading {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .statistics-container-flex {
+    flex-direction: column;
+    margin: 30px 5% 0 5%;
+  }
+
+  .statistics-container-flex > div {
+    padding: 20px 60px;
+  }
+
+  .statistics-container-flex > div > p {
+    font-size: 16px;
+  }
+
+  .statistics-container-flex > div > h1 {
+    font-size: 22px;
+  }
 }
