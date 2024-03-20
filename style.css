@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
 }
 
-/* header navbar */
+/* header navbar start */
 #bg-img {
   background-image: url("./assets/bg-img.png");
   background-repeat: no-repeat;
@@ -59,8 +59,9 @@ body {
 .main {
   height: 1000px;
 }
+/* header-navbar end */
 
-/* hero section */
+/* hero section start */
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -136,25 +137,184 @@ body {
   margin-right: 16px;
   height: 70vh;
 }
+/* hero secton end */
 
-/* about section */
+/* about section start */
 .about-content {
   display: flex;
   justify-content: center;
+  column-gap: 40px;
   align-items: center;
-  margin-top: 30px;
+  margin: 30px 20%;
 }
 
 .about-img {
-  width: 32%;
+  width: 55%;
 }
 
+.about-h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+}
 
+.about-h1 > span {
+  background: radial-gradient(
+    circle,
+    #a66bff,
+    #c666ef,
+    #dd62df,
+    #ee61cf,
+    #fb64bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text-wraper > p {
+  color: #d7d7d7;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 26px 0;
+}
+
+.about-text-wraper > button {
+  background-image: radial-gradient(
+    circle,
+    #feb302,
+    #f8c600,
+    #eed900,
+    #e0ec00,
+    #cdff05
+  );
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: all 0.5 ease-in;
+}
+
+.about-text-wraper > button:hover {
+  background-image: radial-gradient(
+    circle,
+    #eed900,
+    #feb302,
+    #f8c600,
+    #e0ec00,
+    #cdff05
+  );
+}
+/* about secton end */
+
+/* start choose area */
+.choose-container {
+  margin: 180px 0 10px 0;
+}
+
+.main-text {
+  color: #feb302;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.main-heading {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+  line-height: 60px;
+}
+
+.main-heading > span {
+  background: radial-gradient(
+    circle,
+    #a66bff,
+    #c666ef,
+    #dd62df,
+    #ee61cf,
+    #fb64bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.choose-row {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.single-card {
+  width: 16%;
+}
+
+.choose-row > .single-card > h1 {
+  background: radial-gradient(
+    circle,
+    #a66bff,
+    #c666ef,
+    #dd62df,
+    #ee61cf,
+    #fb64bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.choose-row > .single-card > h1 > span {
+  color: white;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: start;
+  column-gap: 8px;
+  align-items: baseline;
+}
+
+.card-heading > h1 {
+  background: radial-gradient(
+    circle,
+    #a66bff,
+    #c666ef,
+    #dd62df,
+    #ee61cf,
+    #fb64bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.card-heading > span {
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.single-card > p {
+  color: #d7d7d7;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+/* end choose area */
+
+/* <!-- start projects area --> */
 
 
 /* mobile device */
 @media (max-width: 575.98px) {
-  /* header navbar */
+  /* header navbar start */
   #bg-img {
     background-image: none;
     background-color: black;
@@ -184,8 +344,9 @@ body {
   .visible-for-sm > i > img {
     width: 65%;
   }
+  /* header navbar end */
 
-  /* hero section */
+  /* hero section start */
   .hero-section {
     row-gap: 45px;
     flex-direction: column;
@@ -216,6 +377,67 @@ body {
     height: 48vh;
     margin: 0 auto;
   }
+  /* hero section end */
 
+  /* about section start */
+  .about-content {
+    flex-direction: column-reverse;
+    row-gap: 50px;
+    margin: 100px 0%;
+  }
 
+  .about-img {
+    width: 80%;
+  }
+
+  .about-text-wraper {
+    width: 90%;
+    text-align: justify;
+  }
+
+  .about-text-wraper > p {
+    font-size: 14px;
+  }
+
+  .about-h1 {
+    font-size: 21px;
+  }
+  /* about section end */
+
+  /* start choose area */
+  .choose-container {
+    margin: 80px 0 10px 0;
+  }
+
+  .main-text {
+    font-size: 12px;
+  }
+
+  .main-heading {
+    width: 100%;
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .choose-row {
+    flex-direction: column;
+    margin: 30px 0;
+  }
+
+  .single-card {
+    width: 90%;
+  }
+
+  .single-card > p {
+    font-size: 14px;
+  }
+
+  .card-heading > span {
+    font-size: 15px;
+    font-weight: 800;
+  }
+
+  .card-heading > h1 {
+    font-size: 40px;
+  }
 }
