@@ -437,6 +437,10 @@ body {
 }
 /* end statistics area */
 
+/*  */
+
+/*  */
+
 /* mobile device */
 @media (max-width: 575.98px) {
   /* header navbar start */
@@ -628,4 +632,9 @@ body {
   .statistics-container-flex > div > h1 {
     font-size: 22px;
   }
+  /* end statistics area */
+
+  /*  */
+
+  /*  */
 }
