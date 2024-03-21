@@ -55,10 +55,14 @@
             We offer many offerwalls, faucet claims, games and more to help you
             earn money online. It's fast, free and easy!
           </p>
-          <button class="hero-btn1">Get Started</button>
-          <button class="hero-btn2">
-            <img src="./assets/line.png" alt="line image" /> Login
-          </button>
+          <a href="#" class="btn1-link">
+            <button class="btn1">Get Started</button>
+          </a>
+          <a href="#" class="btn2-link">
+            <button class="btn2">
+              <img src="./assets/line.png" alt="line image" /> Login
+            </button>
+          </a>
         </div>
         <img
           src="./assets/header-bg.png"
@@ -69,6 +73,13 @@
       <!-- hero section -->
     </header>
     <main>
+      <!-- start scroll btn area -->
+      <button id="scrollBtn" onclick="goToTopFun()" title="Go to top">
+        <i>
+          <img src="./assets/up-arrow.png" alt="up-arrow" />
+        </i>
+      </button>
+      <!-- end scrool btn area -->
       <!-- about section start -->
       <section class="about-content">
         <img src="./assets/about.png" alt="about image" class="about-img" />
@@ -81,7 +92,9 @@
           <p>
             Then, redeem your coins anytime for instant bitcoin, cash and more.
           </p>
-          <button>Signup Now</button>
+          <a href="#">
+            <button>Signup Now</button>
+          </a>
         </div>
       </section>
       <!-- about section end -->
@@ -364,14 +377,14 @@
         <div class="footer-app">
           <h1>Download App</h1>
           <div>
-            <a href="https://play.google.com/store/apps" target="_blank"
-              ><img src="./assets/android-app-img.png" alt="android-app-img"
-            /></a>
+            <a href="https://play.google.com/store/apps" target="_blank">
+              <img src="./assets/android-app-img.png" alt="android-app-img" />
+            </a>
           </div>
           <div>
-            <a href="https://www.apple.com/iphone/" target="_blank"
-              ><img src="./assets/ios-app-img.png" alt="ios-app-img.png"
-            /></a>
+            <a href="https://www.apple.com/iphone/" target="_blank">
+              <img src="./assets/ios-app-img.png" alt="ios-app-img.png" />
+            </a>
           </div>
         </div>
       </div>
@@ -384,10 +397,37 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- custom scroll btn js -->
+
     <!-- Swiper cdn js link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
     <script>
+      // Get the button
+      var mybutton = document.getElementById("scrollBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function goToTopFun() {
+        // Scroll to the top with smooth behavior
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
       let swiper = new Swiper(".mySwiper", {
         breakpoints: {
           // when window width is >= 320px

@@ -18,6 +18,7 @@
   width: 100%;
   top: 0;
   left: 0;
+  z-index: 500;
   padding: 1% 6%;
   background-color: black;
 }
@@ -31,6 +32,7 @@
   justify-content: center;
   gap: 0 20px;
   align-items: center;
+  margin-bottom: 0 !important;
 }
 
 .menu > li {
@@ -62,7 +64,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
   height: 100vh;
 }
 
@@ -76,7 +77,7 @@
 }
 
 .hero-h1 {
-  font-size: 100px;
+  font-size: 90px;
   font-weight: 900;
   color: white;
 }
@@ -88,7 +89,12 @@
   margin: 40px 0;
 }
 
-.hero-btn1 {
+.btn1-link {
+  color: black;
+  text-decoration: none;
+}
+
+.btn1 {
   background-image: radial-gradient(
     circle,
     #feb302,
@@ -103,7 +109,7 @@
   transition: all 0.5 ease-in;
 }
 
-.hero-btn1:hover {
+.btn1:hover {
   background-image: radial-gradient(
     circle,
     #eed900,
@@ -114,7 +120,7 @@
   );
 }
 
-.hero-btn2 {
+.btn2 {
   background: radial-gradient(
     circle,
     #feb302,
@@ -130,10 +136,32 @@
 }
 
 .right-hero {
-  margin-right: 16px;
+  margin-right: 10px;
   height: 70vh;
 }
 /* hero secton end */
+
+/* start scroll btn area */
+#scrollBtn {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #feb302;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  transition: 0.5s all ease;
+}
+
+#scrollBtn:hover {
+  bottom: 45px;
+}
+/* end scroll btn area */
 
 /* about section start */
 .about-content {
@@ -146,6 +174,12 @@
 
 .about-img {
   width: 55%;
+  transition: 0.5s all ease;
+}
+
+.about-img:hover {
+  cursor: pointer;
+  transform: scale(0.9);
 }
 
 .about-h1 {
@@ -174,7 +208,7 @@
   margin: 26px 0;
 }
 
-.about-text-wraper > button {
+.about-text-wraper > a > button {
   background-image: radial-gradient(
     circle,
     #feb302,
@@ -187,9 +221,15 @@
   border-radius: 10px;
   font-weight: 700;
   transition: all 0.5 ease-in;
+  border: none;
 }
 
-.about-text-wraper > button:hover {
+.about-text-wraper > a > button {
+  color: black;
+  text-decoration: none;
+}
+
+.about-text-wraper > a > button:hover {
   background-image: radial-gradient(
     circle,
     #eed900,
@@ -307,7 +347,7 @@
 
 /* start projects area */
 .project-container {
-  margin: 120px 320px 180px 320px;
+  margin: 120px 320px 140px 320px;
 }
 
 .project-container-main-text {
@@ -447,7 +487,8 @@ body {
 .swiper {
   width: 60%;
   height: 100%;
-  margin: 150px 0;
+  margin: 140px 0;
+  position: relative;
 }
 
 .testimonials-section-main-text {
@@ -517,8 +558,8 @@ body {
   border: 12px solid black;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #feb302 !important;
+.swiper-pagination {
+  display: none;
 }
 /* end testimonials area */
 
@@ -550,7 +591,24 @@ body {
   padding: 8px;
   cursor: pointer;
   margin-right: 10px;
-  transition: 0.8s all ease;
+  transition: 0.5s all ease;
+}
+
+.facebook-icon:hover {
+  background-color: #feb302;
+}
+
+.telegram-icon {
+  width: 6%;
+  border: 1px solid #9f67f4;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.telegram-icon:hover {
+  background-color: #feb302;
 }
 
 .first-section > div > p {
@@ -574,7 +632,7 @@ body {
 .footer-menu > ul > li > a {
   text-decoration: none;
   color: #cdc4d9;
-  transition: 0.8s all ease;
+  transition: 0.5s all ease;
 }
 
 .footer-menu > ul > li > a:hover {
@@ -596,7 +654,7 @@ body {
 .footer-page > ul > li > a {
   text-decoration: none;
   color: #cdc4d9;
-  transition: 0.8s all ease;
+  transition: 0.5s all ease;
 }
 
 .footer-page > ul > li > a:hover {
@@ -611,25 +669,8 @@ body {
 }
 
 .footer-app > div {
-  margin-left: 25px;
+  margin: 0 0 10px 25px;
   text-align: center;
-}
-
-.facebook-icon:hover {
-  background-color: #feb302;
-}
-
-.telegram-icon {
-  width: 6%;
-  border: 1px solid #9f67f4;
-  border-radius: 50%;
-  padding: 8px;
-  cursor: pointer;
-  transition: 0.8s all ease;
-}
-
-.telegram-icon:hover {
-  background-color: #feb302;
 }
 
 .second-section {
@@ -654,7 +695,9 @@ body {
   }
 
   .menu {
-    margin-top: 15px;
+    margin: 0 0 0 30px;
+    padding: 10px 0;
+    gap: 0px;
   }
 
   .google-logo {
@@ -708,6 +751,17 @@ body {
   }
   /* hero section end */
 
+  /* start scroll btn area */
+  #scrollBtn {
+    right: 20px;
+    padding: 10px;
+  }
+
+  #scrollBtn:hover {
+    bottom: 20px;
+  }
+  /* end scroll btn area */
+
   /* about section start */
   .about-content {
     flex-direction: column-reverse;
@@ -730,6 +784,10 @@ body {
 
   .about-h1 {
     font-size: 21px;
+  }
+
+  .about-text-wraper > button {
+    padding: 10px 24px;
   }
   /* about section end */
 
@@ -850,7 +908,7 @@ body {
   .swiper {
     width: 99.5%;
     height: auto;
-    margin: 100px 0 0 0;
+    margin: 100px 0;
   }
 
   .swiper-wraper {
@@ -861,4 +919,61 @@ body {
     width: 100% !important;
   }
   /* end testimonials area */
+
+  /* start footer area */
+  .footer {
+    padding: 30px 20px;
+    margin: 0;
+  }
+
+  .footer-logo {
+    width: 45%;
+  }
+
+  .first-section {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .facebook-icon {
+    width: 10%;
+  }
+
+  .telegram-icon {
+    width: 10%;
+  }
+
+  .footer-menu {
+    padding-left: 0;
+  }
+
+  .footer-menu > h1 {
+    margin-left: 0;
+  }
+
+  .footer-menu > ul {
+    padding-left: 0;
+  }
+
+  .footer-page {
+    padding-left: 0;
+  }
+
+  .footer-page > h1 {
+    margin-left: 0;
+  }
+
+  .footer-page > ul {
+    padding-left: 0;
+  }
+
+  .footer-app > h1 {
+    margin-left: 0;
+  }
+
+  .footer-app > div {
+    margin-left: 0;
+    text-align: left;
+  }
+  /* end footer area */
 }
