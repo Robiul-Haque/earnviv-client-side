@@ -1,3 +1,17 @@
+html,
+body {
+  /* using google font for website */
+  font-family: "Jost", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-style: normal !important;
+
+  /* swiper slider css property start */
+  position: relative;
+  height: 100%;
+  box-sizing: border-box;
+  /* swiper slider css property end */
+}
+
 /* header navbar start */
 #bg-img {
   background-image: url("./assets/bg-img.png");
@@ -474,16 +488,6 @@
 /* end statistics area */
 
 /* start testimonials area */
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  box-sizing: border-box;
-}
-
 .swiper {
   width: 60%;
   height: 100%;
