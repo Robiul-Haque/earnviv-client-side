@@ -1,7 +1,3 @@
-body {
-  box-sizing: border-box;
-}
-
 /* header navbar start */
 #bg-img {
   background-image: url("./assets/bg-img.png");
@@ -222,7 +218,7 @@ body {
   font-size: 40px;
   font-weight: 900;
   text-align: center;
-  width: 30%;
+  width: 32%;
   margin: 0 auto;
   line-height: 60px;
 }
@@ -437,9 +433,213 @@ body {
 }
 /* end statistics area */
 
-/*  */
+/* start testimonials area */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 
-/*  */
+body {
+  box-sizing: border-box;
+}
+
+.swiper {
+  width: 60%;
+  height: 100%;
+  margin: 150px 0;
+}
+
+.testimonials-section-main-text {
+  color: #feb302;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.testimonials-section-main-heading {
+  color: white;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 0 auto 20px auto;
+  line-height: 60px;
+}
+
+.testimonials-section-main-heading > span {
+  background: radial-gradient(
+    circle,
+    #a66bff,
+    #c666ef,
+    #dd62df,
+    #ee61cf,
+    #fb64bf
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.user-name {
+  color: white;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+}
+
+.icon {
+  width: 4%;
+  margin: 12px 0;
+}
+
+.user-feedback {
+  font-weight: 500;
+  color: #d7d7d7;
+  font-size: 16px;
+}
+
+.user-img {
+  display: block;
+  width: 25%;
+  height: 25%;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 12px solid black;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #feb302 !important;
+}
+/* end testimonials area */
+
+/* start footer area */
+.footer {
+  margin: 0 15px;
+  padding: 30px 300px;
+  border-radius: 10px;
+  background-color: #0d0d0d;
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 26%;
+}
+
+.footer-text {
+  color: white;
+}
+
+.facebook-icon {
+  width: 6%;
+  border: 1px solid #9f67f4;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: 0.8s all ease;
+}
+
+.first-section > div > p {
+  width: 70%;
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+.footer-menu > h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.footer-menu > ul > li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.footer-menu > ul > li > a {
+  text-decoration: none;
+  color: #cdc4d9;
+  transition: 0.8s all ease;
+}
+
+.footer-menu > ul > li > a:hover {
+  color: #feb302;
+}
+
+.footer-page > h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.footer-page > ul > li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+.footer-page > ul > li > a {
+  text-decoration: none;
+  color: #cdc4d9;
+  transition: 0.8s all ease;
+}
+
+.footer-page > ul > li > a:hover {
+  color: #feb302;
+}
+
+.footer-app > h1 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.footer-app > div {
+  margin-left: 25px;
+  text-align: center;
+}
+
+.facebook-icon:hover {
+  background-color: #feb302;
+}
+
+.telegram-icon {
+  width: 6%;
+  border: 1px solid #9f67f4;
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  transition: 0.8s all ease;
+}
+
+.telegram-icon:hover {
+  background-color: #feb302;
+}
+
+.second-section {
+  padding-top: 30px;
+  color: #cdc4d9;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: center;
+}
+/* end footer area */
 
 /* mobile device */
 @media (max-width: 575.98px) {
@@ -634,7 +834,31 @@ body {
   }
   /* end statistics area */
 
-  /*  */
+  /* start testimonials area */
+  .testimonials-section-main-text {
+    font-size: 12px;
+    font-weight: 600;
+  }
 
-  /*  */
+  .testimonials-section-main-heading {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .swiper {
+    width: 99.5%;
+    height: auto;
+    margin: 100px 0 0 0;
+  }
+
+  .swiper-wraper {
+    margin: 0 60px;
+  }
+
+  .swiper-slide {
+    width: 100% !important;
+  }
+  /* end testimonials area */
 }
